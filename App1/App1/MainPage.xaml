@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.MainPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Welcome to my password generator/encrypter"
+                HorizontalTextAlignment="Center" 
+                       TextColor="White"
+                       FontSize="36"/>
+            </Frame>
+            <Label Text="Enter a size(integer) to generate a random password:"/>
+            <Entry x:Name="stringSize" BackgroundColor="#2196F3"></Entry>
+            <Button HorizontalOptions="Center" Text="Generate Passord" Clicked="Button_Clicked"/>
+            <Label x:Name="stringOutput">Generated random password: </Label>
+
+            <Label Text=""/>
+            <Label Text="Enter password to encrypt it:"/>
+            <Entry x:Name="EncryptEntry" BackgroundColor="#2196F3"></Entry>
+            <Button HorizontalOptions="Center" Text="Encrypt Password" Clicked="Button_Clicked2"/>
+            <Label x:Name="encryptOutput">Encrypted password:</Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
